@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XV Años | Ruth Abigail</title>
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- ESTILOS CSS EXTERNIDAD -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<!-- MÚSICA DE FONDO -->
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="music/Evangeline.mpeg" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+<button class="music-control" id="musicButton" aria-label="Reproducir música" title="Música">♪</button>
+
+<!-- PORTADA INTERACTIVA QUE SE ABRE -->
+<div class="book-stage" id="bookStage">
+    <div class="book-wrapper" id="bookWrapper">
+        <div class="book-cover">
+            <div id="cover-sparkles"></div>
+            <img src="img/Corona.png" class="crown" alt="Corona decorativa">
+            <p class="book-subtitle">Una noche mágica</p>
+            <h1 class="main-name">Ruth Abigail</h1>
+            <p class="book-text">
+                Te invita a celebrar una noche inolvidable,<br>
+                llena de bendición, alegría y sueños.
+            </p>
+            <p class="book-date">MIS XV AÑOS</p>
+            <button class="gold-button" id="openBookBtn">
+                ✨ Abrir invitación ✨
+            </button>
+        </div>
+    </div>
+</div>
+
+<main id="mainContent">
+
+    <!-- INVITACIÓN PRINCIPAL EN PERGAMINO -->
+    <section class="section">
+        <!-- CORONA AL INICIO DE LA INVITACIÓN DESPLEGADA -->
+        <img src="img/Corona.png" class="crown-header" alt="Corona decorativa">
+        
+        <h2 class="section-title">Una invitación especial</h2>
+        
+        <div class="parchment-card first-parchment">
+            <img src="img/pergamino.png" class="parchment-background" alt="">
+            <!-- IMAGEN DECORATIVA DIANA 1 -->
+            <img src="img/Diana1.png" class="diana-img diana-1" alt="Decoración Diana 1">
+
+            <div class="parchment-content">
+                <p>Con la bendición de Dios y el amor infinito de nuestros </p>
+                <p>corazones, tenemos el agrado de invitarlos a la </p>
+                <p>celebración de los XV Años de nuestra amada hija:</p>
+                <h3>Ruth Abigail</h3>
+                <p>En compañía de sus padres</p>
+                <p class="highlight">José Luis Rivera Pillco</p>
+                <p class="highlight"> &</p>
+                <p class="highlight">Nora Poma Gerónimo</p>
+                <p class="small-text" style="margin-top:15px;">“Deléitate asimismo en Jehová, Y él te concederá las peticiones de tu corazón”</p>
+                <p class="small-text" style="margin-top:15px;">Salmos 37:4</p>
+                <p class="small-text">Esperamos contar con tu valiosa presencia</p>
+                <p class="small-text"> en esta noche de ensueño.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALENDARIO Y CUENTA REGRESIVA -->
+    <section class="section">
+        <!-- IMAGEN DECORATIVA DIANA 2 -->
+        <img src="img/Diana2.png" class="diana-img diana-2" alt="Decoración Diana 2">
+
+        <h2 class="section-title">Reserva la fecha</h2>
+        <div class="calendar">
+            <h3>DICIEMBRE 2026</h3>
+            <div class="calendar-grid" id="calendarGrid"></div>
+        </div>
+
+        <div class="countdown">
+            <div class="countdown-box">
+                <strong id="days">00</strong>
+                <span>Días</span>
+            </div>
+            <div class="countdown-box">
+                <strong id="hours">00</strong>
+                <span>Horas</span>
+            </div>
+            <div class="countdown-box">
+                <strong id="minutes">00</strong>
+                <span>Minutos</span>
+            </div>
+            <div class="countdown-box">
+                <strong id="seconds">00</strong>
+                <span>Segundos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN EN PERGAMINO -->
+    <section class="section">
+        <h2 class="section-title">¿Dónde será la celebración?</h2>
+        <div class="parchment-card">
+            <img src="img/pergamino.png" class="parchment-background" alt="">
+            <!-- IMAGEN DECORATIVA DIANA 3 -->
+            <img src="img/Diana3.png" class="diana-img diana-3" alt="Decoración Diana 3">
+
+            <div class="parchment-content">
+                <p class="highlight">Lugar del Evento</p>
+                <h3>Te esperamos</h3>
+                <p><strong>Dirección:</strong> Villarroel y Vacovik</p>
+                <p>(Exterminal)</p>
+                <p class="small-text">Sábado 5 de Diciembre de 2026 — 17:00 HRS</p>
+                
+                <a class="gold-button" 
+                   href="https://maps.app.goo.gl/f1JRcjfernxhjigv5?g_st=aw" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    📍 Ver ubicación en Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Con cariño, Ruth Abigail</p>
+    <p>Una noche mágica e inolvidable ✨</p>
+</footer>
+
+<!-- CONTROLES FLOTANTES -->
+<button class="scroll-control" id="scrollButton">↓ Auto-Scroll</button>
+<a class="whatsapp-float" href="https://wa.me/59172341872?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20los%20XV%20Años%20de%20Ruth%20Abigail." target="_blank">💬 Confirmar RSVP</a>
+
+<!-- SCRIPT JS EXTERNO -->
+<script src="script.js"></script>
+</body>
+</html>
